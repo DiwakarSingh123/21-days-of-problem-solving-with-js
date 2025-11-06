@@ -131,3 +131,118 @@ function InvertedHollow(num){
 InvertedHollow(5);
 
 
+// 8 .Print Diamond Pattern
+function Diamond(num){
+    // upper half
+    for (let i = 0; i <=num; i++) {
+       let str=' ';
+       // add left space
+       for (let j = i; j <num; j++) {
+        str+=" "
+       }
+       // add start....
+       for (let j = 1; j <=i*2-1; j++) {
+        str+="*"
+       }
+       // add right space
+       for (let j = i; j <num; j++) {
+        str+=" "
+       }
+       
+       console.log(str);
+        
+    }
+    // again for reverse.....
+    // lower half
+    for (let i = 1; i <num; i++) {
+       let str=' ';
+       // add left space
+       for (let j = 1; j <=i; j++) {
+        str+=" "
+       }
+       // add start....
+       for (let j = i; j <=(num-1)*2-i; j++) {
+        str+="*"
+       }
+       // add right space
+      for (let j = 1; j <=i; j++) {
+        str+=" "
+       }
+       
+       console.log(str);
+        
+    }
+    
+}
+
+Diamond(4);
+
+// 9 Print Hourglass Pattern
+function Hourglass(num){
+    // upper half
+    for (let i = 1; i <=num; i++) {
+       let str=' ';
+       // add left space
+       for (let j = 1; j <i; j++) {
+        str+=" "
+       }
+       // add start....
+       for (let j = i; j <=num*2-i; j++) {
+        str+="*"
+       }
+       // add right space
+      for (let j = 1; j <i; j++) {
+        str+=" "
+       }
+       
+       console.log(str);
+        
+    }
+    // lower case
+     for (let i = 2; i <=num; i++) {
+       let str=' ';
+       // add left space
+       for (let j = i; j <num; j++) {
+        str+=" "
+       }
+       // add start....
+       for (let j = 1; j <=i*2-1; j++) {
+        str+="*"
+       }
+       // add right space
+      for (let j = i; j <num; j++) {
+        str+=" "
+       }
+       
+       console.log(str);
+        
+    }
+}
+
+
+Hourglass(5);
+
+// 10 Print Rhombus Pattern
+function Rhombus(num){
+    for (let i = 1; i <=num; i++) {
+        let str=' ';
+       //left space
+       for (let j = i; j <=num; j++) {
+        str+=" "
+       }
+
+       // print start
+       for (let j = 1; j <=num; j++) {
+        str+="*"
+       }
+
+       //right space
+       for (let j = 1; j <=i; j++) {
+        str+=" "
+       }
+        console.log(str);
+        
+    }
+}
+
+Rhombus(5);
